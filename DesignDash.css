@@ -1,0 +1,1535 @@
+/* Body styling */
+body {
+   margin: 0;
+   padding: 0;
+   background-color: white;
+}
+.header {
+   display: flex;
+   justify-content: space-between; /* Aligns items to the left and right */
+   align-items: center; /* Vertically centers items */
+   padding: 10px; /* Adds some padding */
+   background-color: white; /* Background color for the header */
+}
+
+/* Flexbox to align links closer */
+.nav-links {
+   display: flex;
+   justify-content: flex-start; /* Align links to the left */
+   gap: 5px; /* Adjust spacing between items as needed */
+   padding: 0;
+   margin: 0;
+   list-style: none; /* Remove bullet points */
+}
+
+/* Remove absolute positioning for individual items */
+.tailor-center, .help, .about {
+   font-family: 'Josefin Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 30px;
+   line-height: 18px;
+   height: 15px;
+   color: #000000;
+   cursor: pointer; /* Changes cursor to pointer on hover */
+   text-align: center;
+   padding: 0;
+   text-decoration: none; /* Remove underline */
+   margin-right: 10px; /* Adds spacing between links */
+}
+/* Navigation Links Adjustment */
+.nav-links li a {
+   padding-left: 40px; /* or margin-left: 10px; */
+}
+
+.title {
+   flex: 1; /* Takes up available space to center the title */
+   text-align: center; /* Centers the title text */
+   font-family: 'Caslon Graphique D';
+   font-style: normal;
+   font-weight: 400;
+
+   color: #000000;
+
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.flag {
+   margin-left: auto; /* Moves the flag to the right */
+   width: 110px;
+   height: 20px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.header-divider {
+   position: absolute;
+   width: 1142px;
+   height: 0px; /* Height can be set to 0 if it's just a line */
+   left: 50px;
+   top: 85px; /* Adjust the position as needed */
+   border: 1px solid #D9D9D9; /* Line color */
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Shadow effect */
+}
+.shop-info {
+   display: flex; /* Use flexbox for layout */
+   align-items: center; /* Center vertically */
+   margin-top: 20px; /* Space above the shop info */
+}
+
+.shop-info img {
+   border-radius: 50%; /* Circular avatar */
+   margin-right: 15px; /* Space between avatar and text */
+   position: absolute;
+   width: 167px;
+   height: 141px;
+   left: 158px;
+   top: 136px;
+   background-size: cover; /* Ensure the image covers the area */
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Drop shadow */
+}
+
+.shop-info h3 {
+   margin: 0; /* Remove default margin */
+   position: absolute;
+   width: 456px;
+   height: 48px;
+   left: 338px;
+   top: 175px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 48px;
+   /* identical to box height */
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   color: #000000;
+
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.shop-stats {
+   margin-left: 50px; /* Space between shop name and stats */
+   position: absolute;
+   width: 210px;
+   height: 24px;
+   left: 840px;
+   top: 190px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 150%;
+   /* identical to box height, or 24px */
+   display: flex;
+   align-items: center;
+
+   color: #000000;
+
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.shop-stats span {
+   margin: 0 10px; /* Space between stats */
+}
+/* Main container styling */
+.container {
+   display: flex;
+   flex-direction: row;
+}
+
+/* Sidebar styling */
+.sidebar {
+   color: black;
+   box-sizing: border-box;
+   position: absolute;
+   width: 324px;
+   height:600px;
+   left: 188px;
+   top: 351px;
+   border: 1px solid #000000;
+   border-radius: 15px 0px 0px 15px;
+   padding: 20px; /* Optional: Add padding for better spacing */
+   background-color: white; /* Optional: Background color for sidebar */
+}
+/* Style for Dashboard */
+.sidebar a {
+   display: flex; /* Use flexbox to align the icon and text */
+   align-items: center; /* Vertically center the icon and text */
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   margin-left: 10px;
+   display: block;
+   color: black;
+   padding: 10px 0;
+   font-size: 18px;
+   text-decoration: none;
+   padding-left: 10px;
+   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.25);
+
+}
+/* Styling for Dashboard Icons (My Account to Signout) */
+.sidebar > a > i {
+   font-size: 1.9rem; /* Adjust the size of the icons */
+   margin-right: 15px; /* Add space between the icon and the text */
+   vertical-align: middle; /* Align icons vertically with the text */
+   text-shadow: none;
+}
+
+/* Style for Links on Hover */
+.sidebar a:hover {
+   background-color: black;
+   color: white;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 4px;
+   padding-left: 10px; /* Maintain the same padding on hover */
+}
+/* Style for Active Link */
+.sidebar a:active {
+   font-weight: bold; /* Make active link bold */
+   color:white; /* Change color for active link */
+}
+/* Submenu styling */
+.subMenu {
+   display: none;
+   margin-left: 10px;
+}
+
+.subMenu a {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   /* identical to box height */
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #767272;
+   text-shadow: none;
+}
+
+/* Content area styling */
+.main {
+   flex-grow: 1;
+   padding: 20px;
+}
+
+/* Profile section */
+#profileSection, #contactInfoSection {
+   display: none; /* Hidden by default */
+   background-color:#f7f7f7;
+   padding: 20px;
+   border-radius: 8px;
+}
+
+.right-sidebar {
+   position: absolute;
+   width: 650px;
+   height: 650px;
+   left: 492px;
+   top: 277px;
+   background: #f7f7f7;
+   border-radius: 15px;
+   padding: 20px;
+   display: none; /* Initially hidden */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+   margin-bottom: 10px;
+}
+
+.text-secondary {
+   color: #f7f7f7;
+}
+/* Profile Section styling */
+#profileSection {
+   font-family: 'Josefin Sans', sans-serif; /* Set the font for the entire Profile section */
+   padding: 20px;
+   box-shadow: none; /* Remove any shadow if exists */
+   padding-top: 20px;
+}
+
+/* My Profile title styling */
+#profileSection h1 {
+   position: relative;
+   width: auto;
+   height: auto;
+   top: -40px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 30px;
+   color: #000000;
+   margin-bottom: 10px; /* Space below the title */
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Manage and protect your account text styling */
+#profileSection p {
+   position: absolute;
+   width: auto;
+   height: auto;
+   top: 40px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   color: #767272;
+   margin-bottom: 20px; /* Space below the paragraph */
+}
+/* Gray line divider under "Manage and protect your account" */
+#profileSection .gray-divider {
+   margin: 5px 0; /* Space above and below the line */
+   width: 100%; /* Full width of the section */
+   border: 1px solid #D9D9D9;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   position: relative; /* Enable positioning adjustments */
+   top: -5px; /* Move the line up by 5 pixels */
+}
+/* Label Styling for Username, Shop Name, Bio */
+#profileSection .row h5 {
+   width: 396px;
+   height: 24px;
+
+   font-size: 14px;
+   font-weight: 550;
+   color: #000;
+   margin-bottom: 5px;
+   line-height: 24px;
+
+   /* Inside auto layout */
+   flex: none;
+   order: 0;
+   align-self: stretch;
+   flex-grow: 0;
+}
+/* Input Fields Styling for Username and Shop Name */
+#profileSection input[type="text"]:not(#bio) {
+   width: 300px;
+   height: 48px;
+
+   font-size: 13px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   line-height: 150%;
+   /* identical to box height, or 22px */
+   color:  #828282;
+   padding: 4px 10px;
+   /* Inside auto layout */
+   flex: none;
+   order: 0;
+   flex-grow: 1;
+
+   border: 1px solid #e0e0e0; /* This defines the border of the input box */
+   border-radius: 8px; /* This rounds the corners of the input box */
+   background-color: white;
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Input fields on hover and focus */
+#profileSection input[type="text"]:not(#bio):hover {
+   border-color: #888; /*Changes the border color when hovered */
+}
+
+#profileSection input[type="text"]:not(#bio):focus {
+   outline: none;
+   border-color: black; /* Changes the border color when focused */
+   background-color: #f8f9fa; /* Makes the background white on focus */
+}
+/* Input Field Styling for Bio */
+#profileSection #bio{
+   width: 300px;
+   height: 150px;
+
+   font-size: 13px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   line-height: 150%;
+   /* identical to box height, or 22px */
+   color:  #828282;
+   padding: 10px;
+
+   /* Inside auto layout */
+   flex: none;
+   order: 0;
+   flex-grow: 1;
+
+   border: 1px solid #e0e0e0; /* This defines the border of the input box */
+   border-radius: 8px; /* This rounds the corners of the input box */
+   background-color: #FFFFFF;
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+
+   resize: none; /* Prevents manual resizing */
+}
+/* Hover and Focus effects for Bio */
+#profileSection #bio:hover {
+   border-color: #888; /*Changes the border color when hovered */
+}
+#profileSection #bio:focus {
+   outline: none;
+   border-color: black; /* Changes the border color when focused */
+   background-color: #f8f9fa; /* Makes the background white on focus */
+}
+#profileSection .content {
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+}
+.save-button-container {
+   display: flex;
+   justify-content: flex-end; /* Aligns the button to the right */
+   margin-top: -60px; /* Add margin to push it down */
+}
+
+/* Save Button Styling */
+.save-button {
+   width: 95px;
+   height: 30px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 16px;
+
+   display: block;
+   margin-top: auto;
+   padding: 5px 10px;
+   font-size: 14px;
+   font-weight: 600;
+   color: black;
+   background-color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.save-button:hover {
+   background-color: whitesmoke;
+   transform: scale(1.05);
+}
+.save-button:active{
+   background-color: whitesmoke; /* Even darker blue on click */
+   transform: scale(0.98); /* Slightly shrink on click for a pressed effect */
+}
+
+/* Styling for Profile Image */
+.profile-image-container {
+   position: absolute; /* Absolute positioning for the profile image */
+   top: 150px; /* Adjust this value to move it vertically */
+   right: 50px; /* Adjust this value to move it horizontally */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.profile-image {
+   position: relative;
+   width: 140px; /* Ensure equal width and height */
+   height: 140px;
+   border-radius: 100%; /* Make it a circle */
+   overflow: hidden; /* Ensure the image stays inside the circle */
+   border: 2px solid #ccc; /* Optional: Add a border for styling */
+}
+
+.profile-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Ensures the image covers the circle without stretching */
+   border-radius: 50%; /* Ensures the image itself is circular */
+}
+/* Styling for Select Image Button */
+.select-image-button {
+   margin-top: 18px;
+   padding: 10px 20px; /* Add padding for a larger button */
+   background-color: black; /* Blue background */
+   color: #fff; /* White text */
+   border: none; /* Remove default borders */
+   border-radius: 5px; /* Rounded corners */
+   cursor: pointer; /* Show pointer cursor on hover */
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 16px;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+
+.select-image-button:hover {
+   background-color: rgb(94, 91, 91); /* Darker blue on hover */
+   transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.select-image-button:active {
+   background-color: rgb(94, 91, 91); /* Even darker blue on click */
+   transform: scale(0.98); /* Slightly shrink on click for a pressed effect */
+}
+#contactInfoSection {
+   font-family: 'Josefin Sans', sans-serif; /* Set the font for the entire Profile section */
+   padding: 20px;
+   box-shadow: none; /* Remove any shadow if exists */
+   padding-top: 20px;
+}
+/* My Contact Info title styling */
+#contactInfoSection h1 {
+   position: relative;
+   width: auto;
+   height: auto;
+   top: -40px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 30px;
+   color: #000000;
+   margin-bottom: 10px; /* Space below the title */
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Manage your contact text styling */
+#contactInfoSection p {
+   position: absolute;
+   width: auto;
+   height: auto;
+   top: 40px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   color: #767272;
+   margin-bottom: 20px; /* Space below the paragraph */
+}
+/* Gray line divider under "Manage your contact" */
+#contactInfoSection .gray-line {
+   margin: 5px 0; /* Space above and below the line */
+   width: 100%; /* Full width of the section */
+   border: 1px solid #D9D9D9;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   position: relative; /* Enable positioning adjustments */
+   top: -5px; /* Move the line up by 5 pixels */
+}
+/* 
+   General row styling for Email Address and Business Number 
+   (This ensures both fields are placed side by side and have enough space between them)
+*/
+#contactInfoSection .row {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px; /* Adds spacing between the rows */
+}
+/* 
+   Styling for each column (col-md-6)
+   (This applies equal width to both the Email Address and Business Number fields)
+*/
+#contactInfoSection .col-md-6 {
+   flex: 1;
+   margin-right: 40px; /* Spacing between the two columns */
+}
+/* 
+   Removes the right margin for the last column
+   (This ensures no extra margin on the right side of the last column)
+*/
+#contactInfoSection .col-md-6:last-child {
+   margin-right: 0; /* Remove right margin for the last column */
+}
+
+/* 
+   Styling for the label elements (h5)
+   (This styles the text like 'Email Address' and 'Business Number')
+*/
+#contactInfoSection h5 {
+   width: 150px;
+   height: 24px;
+
+   font-size: 14px;
+   font-weight: 550;
+   color: #000;
+   margin-bottom: 2px;
+   line-height: 24px;
+
+   /* Inside auto layout */
+   flex: none;
+   order: 0;
+   align-self: stretch;
+   flex-grow: 0;
+}
+/* Styling for the input fields */
+#contactInfoSection input[type="text"] {
+   width: 235px;
+   height: 40px;
+
+   font-size: 13px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 500;
+   line-height: 150%;
+   /* identical to box height, or 22px */
+   color:  #828282;
+   padding: 4px 10px;
+   /* Inside auto layout */
+   flex: none;
+   order: 0;
+   flex-grow: 1;
+
+   border: 1px solid #e0e0e0; /* This defines the border of the input box */
+   border-radius: 8px; /* This rounds the corners of the input box */
+   background-color: white;
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+#contactInfoSection input[type="text"]:hover{
+   border-color: #888; /* Change border color when hovered */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+}
+#contactInfoSection input[type="text"]:focus{
+   outline: none; /* Remove default outline */
+   border-color: black; /* Blue border when focused */
+   background-color: #f8f9fa; /* Slightly lighter background on focus */
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15); /* Stronger shadow when focused */
+}
+
+/* Styling for labels */
+#contactInfoSection label {
+   width: 130px;
+   height: 24px;
+
+   font-size: 14px;
+   font-weight: 550;
+   color: #000;
+   margin-bottom: 2px; /* Adjust this value to reduce space below the label */
+   display: inline-block; /* Keeps the label above the input */
+   line-height: 24px;
+
+   /* Inside auto layout */
+   flex: none;
+   order: 0;
+   align-self: stretch;
+   flex-grow: 0;
+}
+
+/* Styling for columns (half-width for each) */
+#contactInfoSection .col-md-6 {
+   width: 50%; /* Each column takes up half of the width */
+   padding: 10px; /* Padding around each column for spacing */
+   box-sizing: border-box; /* Ensures padding doesn’t affect width calculation */
+}
+
+/* Styling for shop name input field */
+#contactInfoSection input[type="text"]#shopLocation {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 12px 16px;
+   gap: 8px;
+   
+   width: 550px;
+   height: 30px;
+   
+   background: #FFFFFF;
+   border: 1px solid #E0E0E0;
+   /* Button Shadow */
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+   border-radius: 8px;
+   
+   /* Inside auto layout */
+   flex: none;
+   order: 1;
+   align-self: stretch;
+   flex-grow: 1;
+   transition: border-color 0.3s ease; /* Smooth transition on hover */
+}
+#contactInfoSection input[type="text"]#shopLocation:hover{
+   border-color: #888; /* Change border color when hovered */
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+}
+#contactInfoSection input[type="text"]#shopLocation:focus{
+   outline: none; /* Remove default outline */
+   border-color:black; /* Blue border when focused */
+   background-color: #f8f9fa; /* Slightly lighter background on focus */
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15); /* Stronger shadow when focused */
+}
+
+/* Styling for the URL box (non-editable link) */
+#contactInfoSection .url-box {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 12px 16px;
+   gap: 8px;
+   
+   width: 550px;
+   height: 30px;
+   margin-top: 0; /* Remove any extra space above the label */
+   background: #FFFFFF;
+   border: 1px solid #E0E0E0;
+   /* Button Shadow */
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+   border-radius: 8px;
+
+   margin-bottom: 5px; /* Adjust this value to reduce space below the label */
+   margin-top: 0; /* Remove any extra space above the label */
+   
+   /* Inside auto layout */
+   flex: none;
+   order: 1;
+   align-self: stretch;
+   flex-grow: 1;
+   
+   transition: border-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Styling for the URL link inside the URL box */
+#contactInfoSection .url-box a {
+   color: #828282; /* Blue color for the URL */
+   text-decoration: none; /* Remove underline from link */
+}
+
+#contactInfoSection .url-box a:hover {
+   text-decoration: underline; /* Adds underline when hovered */
+}
+
+/* Style for Save Button */
+.save-button {
+   width: 120px;
+   height: 30px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 16px;
+
+   background-color: white; /* Green background */
+   color: black; /* White text */
+   padding: 5px 10px; /* Padding around the button */
+   border: none; /* No border */
+   border-radius: 4px; /* Rounded corners */
+   cursor: pointer; /* Pointer cursor on hover */
+   position: absolute; /* Position it within the container */
+   right: 20px; /* Align to the right side */
+   bottom: 20px; /* Align to the bottom */
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+.save-button:hover {
+   background-color: whitesmoke; /* Darker green on hover */
+   transform: scale(1.05);
+}
+.save-button:active{
+   background-color: whitesmoke; /* Even darker blue on click */
+   transform: scale(0.98); /* Slightly shrink on click for a pressed effect */
+}
+/* Ensure the parent container has relative positioning */
+.content {
+   position: relative; /* Ensure child elements can be absolutely positioned */
+   padding-bottom: 100px; /* Add space for the button at the bottom */
+}
+
+/* change password title styling */
+#changePasswordSection {
+   font-family: 'Josefin Sans', sans-serif; /* Set the font for the entire Profile section */
+   padding: 20px;
+   box-shadow: none; /* Remove any shadow if exists */
+   padding-top: 20px;
+}
+/* My Contact Info title styling */
+#changePasswordSection h1 {
+   position: relative;
+   width: auto;
+   height: auto;
+   top: -40px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 30px;
+   color: #000000;
+   margin-bottom: 10px; /* Space below the title */
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Ensure your account text styling */
+#changePasswordSection p {
+   position: absolute;
+   width: auto;
+   height: auto;
+   top: 40px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   color: #767272;
+   margin-bottom: 20px; /* Space below the paragraph */
+}
+/* Gray line divider */
+#changePasswordSection .gray-divider {
+   margin: 5px 0; /* Space above and below the line */
+   width: 100%; /* Full width of the section */
+   border: 1px solid #D9D9D9;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   position: relative; /* Enable positioning adjustments */
+   top: -5px; /* Move the line up by 5 pixels */
+}
+/* General styling for the container */
+.row {
+   margin-bottom: 30px;
+}
+/* Styling for the labels like 'Current Password', 'New Password', etc. */
+h5 {
+   width: 200px;
+   height: 24px;
+
+   font-size: 14px;
+   font-weight: 550;
+   color: #000;
+   margin-bottom: 2px; /* Adjust this value to reduce space below the label */
+   display: inline-block; /* Keeps the label above the input */
+   line-height: 24px;
+
+   /* Inside auto layout */
+   flex: none;
+   order: 0;
+   align-self: stretch;
+   flex-grow: 0;
+}
+
+.text-secondary {
+   color: #6c757d;
+}
+
+/* Password input container */
+.password-container {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+}
+/* Styling for the input field to leave space for the eye icon */
+.password-input {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 12px 16px;
+   gap: 8px;
+
+   width: 570px; /* Makes the input take the full width of the container */
+   height: 30px;
+   background: #FFFFFF;
+   border: 1px solid #E0E0E0;
+   /* Button Shadow */
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+   border-radius: 8px;
+   
+   /* Inside auto layout */
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+   transition: border-color 0.3s ease; /* Smooth transition on hover */
+   padding-right: 20px; /* Adds space on the right side for the eye icon */
+}
+/* Input field styling */
+input[type="password"] {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 12px 16px;
+   gap: 8px;
+   
+   width: 570px;
+   height: 30px;
+   
+   background: #FFFFFF;
+   border: 1px solid #E0E0E0;
+   /* Button Shadow */
+   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+   border-radius: 8px;
+   
+   /* Inside auto layout */
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+   transition: border-color 0.3s ease; /* Smooth transition on hover */
+}
+input[type="password"]:hover {
+   border-color: #888; /* Change border color when hovered */
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+}
+/* Password input field focus state */
+input[type="password"]:focus {
+   outline: none; /* Remove default outline */
+   border-color:black; /* Blue border when focused */
+   background-color: #f8f9fa; /* Slightly lighter background on focus */
+   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15); /* Stronger shadow when focused */
+   padding-right: 30px; /* Maintain padding for the eye icon */
+}
+
+/* Toggle password visibility icon */
+.toggle-password {
+   position: absolute;
+   top: 50%;
+   right: 30px;
+   transform: translateY(-50%);
+   cursor: pointer;
+}
+
+.toggle-password i {
+   font-size: 18px;
+   color: #6c757d;
+   transition: color 0.3s;
+}
+
+/* Hover effect for the eye icon */
+.toggle-password:hover i {
+   color: #00162c;
+}
+
+/* Password guideline styling */
+.password-guideline {
+   font-size: 12px;
+   color: #6c757d;
+}
+
+#portfolioSection {
+   font-family: 'Josefin Sans', sans-serif; /* Set the font for the entire Profile section */
+   padding: 20px;
+   box-shadow: none; /* Remove any shadow if exists */
+   padding-top: 20px;
+}
+/* My Contact Info title styling */
+#portfolioSection h1 {
+   position: relative;
+   width: auto;
+   height: auto;
+   top: -40px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 30px;
+   color: #000000;
+   margin-bottom: 10px; /* Space below the title */
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Manage your contact text styling */
+#portfolioSection p {
+   position: absolute;
+   width: auto;
+   height: auto;
+   top: 40px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 22px;
+   color: #767272;
+   margin-bottom: 20px; /* Space below the paragraph */
+}
+/* Gray line divider under "Manage your contact" */
+#portfolioSection .gray-divider {
+   margin: 5px 0; /* Space above and below the line */
+   width: 100%; /* Full width of the section */
+   border: 1px solid #D9D9D9;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   position: relative; /* Enable positioning adjustments */
+   top: -5px; /* Move the line up by 5 pixels */
+}
+
+/* Styling for the Add New Portfolio button */
+.addPortfolio {
+   box-sizing: border-box;
+   position: absolute;
+   width: 610px;
+   height: 27px;
+   background-color: #FFFFFF; /* Button background color */
+   
+   color: #000000; /* Text color */
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 18px;
+    
+   /* Flexbox to center the content */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   border: 1px solid #000000;
+   padding:0 0; /* Padding inside the button */
+   font-size: 14px; /* Font size */
+   border-radius: 5px; /* Rounded corners */
+   cursor: pointer; /* Cursor changes to pointer on hover */
+   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Subtle shadow for depth */
+}
+
+/* Hover effect */
+.addPortfolio:hover {
+   background-color: whitesmoke; /* Darker green on hover */
+   transform: scale(1.03);
+}
+
+/* Active button effect (when clicked) */
+.addPortfolio:active {
+   background-color: whitesmoke; /* Even darker blue on click */
+   transform: scale(0.99); /* Slightly shrink on click for a pressed effect */
+}
+/* Styles for the white box */
+.white-box {
+   position: absolute;
+   width: 610px;
+   height: 500px;
+   top: 50px;
+   display: flex;
+   justify-content: center; /* Horizontally center content */
+   align-items: center; /* Vertically center content */
+   background: #FFFFFF;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 10px;
+   
+}
+/* Style for the 'No saved portfolios' text */
+#noPortfoliosText {
+   font-family: 'Poppins', sans-serif;
+   font-size: 16px;
+   font-weight: 600;
+   color: #777;
+   text-align: center;
+   margin: 0;
+}
+/* Styles for the inner box with black border */
+.inner-box {
+   box-sizing: border-box;
+
+   position: absolute;
+   width: 480px;
+   height: 470px;
+   bottom: 100px;
+   top: 3%;
+   left: 3%;
+
+   border: 2px solid #000000;
+   border-radius: 15px;
+   } 
+/* Title input */
+.title-input {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 30px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #000000;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+   width: 120%;
+   height: 60px;
+   padding: 8px;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   font-size: 14px;
+   margin-bottom: 5px;
+   margin-top: 10px;
+   margin-left: 15px;
+   border-radius: 10px;
+   resize: none;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover/focus */
+
+}
+/* Hover and focus for title input */
+.title-input:hover {
+   border-color: #585656; /* Changes border color on hover */
+}
+
+.title-input:focus {
+   outline: none;
+   border-color: black; /* Changes the border color when focused */
+   background-color: #f8f9fa; /* Makes the background white on focus */
+}
+
+/* Description input */
+.description-input {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 15px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   color: #000000;
+
+   width: 93%;
+   height: 70px;
+   padding: 8px;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   font-size: 14px;
+   margin-bottom: 10px;
+   margin-top: 5px;
+   margin-left: 15px;
+   border-radius: 10px;
+   resize: none;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover/focus */
+}
+
+/* Hover and focus for description input */
+.description-input:hover {
+   border-color: #585656; /* Changes border color on hover */
+}
+
+.description-input:focus {
+   outline: none;
+   border-color: black; /* Changes the border color when focused */
+   background-color: #f8f9fa; /* Makes the background white on focus */
+}
+
+
+/* Title input */
+.type-input {
+   position: relative;
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 15px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #000000;
+   width: 28%;
+   height: 30px;
+   padding: 8px;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   margin-bottom: 5px;
+   margin-top: 10px;
+   margin-left: 18px;
+   border-radius: 10px;
+   resize: none;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover/focus */
+   top: 190px;
+   z-index: 10; /* Bring the input boxes above other elements */
+}  
+
+
+.type-description-input {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 5px;
+   line-height: 10px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   color: #000000;
+
+   width: 28%;
+   height: 50px;
+   padding: 8px;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   font-size: 14px;
+   margin-bottom: 10px;
+   margin-top: 5px;
+   margin-left: 18px;
+   border-radius: 10px;
+   resize: none;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover/focus */
+   position: relative;
+   top: 190px;
+   z-index: 10; /* Bring the input boxes above other elements */
+}
+/* Hover effect for both .type-input and .type-description-input */
+.type-input:hover, 
+.type-description-input:hover {
+   border-color: #585656; /* Changes border color on hover */
+}
+
+/* Focus effect for both .type-input and .type-description-input */
+.type-input:focus, 
+.type-description-input:focus {
+   outline: none;
+   border-color: black; /* Changes the border color when focused */
+   background-color: #f8f9fa; /* Makes the background white on focus */
+}
+
+/* Title input */
+.type-inpt {
+   position: relative;
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 15px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #000000;
+   width: 28%;
+   height: 30px;
+   padding: 8px;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   margin: 10px auto 5px auto; /* Center the element */
+   border-radius: 10px;
+   resize: none;
+   top: -125px;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover/focus */
+
+}
+.type-description-inpt {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 5px;
+   line-height: 10px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   color: #000000;
+
+   width: 28%;
+   height: 50px;
+   padding: 8px;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   font-size: 14px;
+   margin: 5px auto 5px auto; /* Center the element */
+   border-radius: 10px;
+   resize: none;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover/focus */
+   position: relative;
+   top: -125px;
+}
+
+.type-inpt:hover, 
+.type-description-inpt:hover {
+   border-color: #585656; /* Changes border color on hover */
+}
+
+/* Focus effect for both .type-input and .type-description-input */
+.type-inpt:focus, 
+.type-description-inpt:focus {
+   outline: none;
+   border-color: black; /* Changes the border color when focused */
+   background-color: #f8f9fa; /* Makes the background white on focus */
+}
+
+/* Title input */
+.type-inp {
+   position: relative;
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 15px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #000000;
+   width: 28%;
+   height: 30px;
+   padding: 8px;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   margin: -110px -130px 5px auto; /* Pushes to the right */
+   border-radius: 10px;
+   resize: none;
+   float: right;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover/focus */
+   top: -105px;
+}
+
+.type-description-inp {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 5px;
+   line-height: 10px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+
+   color: #000000;
+
+   width: 28%;
+   height: 50px;
+   padding: 8px;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+   font-size: 14px;
+   margin: -65px -130px 5px auto; /* Pushes to the right */
+   border-radius: 10px;
+   resize: none;
+   float: right;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover/focus */
+   position: relative;
+   top: -115px;
+}
+.type-inp:hover, 
+.type-description-inp:hover {
+   border-color: #585656; /* Changes border color on hover */
+}
+
+/* Focus effect for both .type-input and .type-description-input */
+.type-inp:focus, 
+.type-description-inp:focus {
+   outline: none;
+   border-color: black; /* Changes the border color when focused */
+   background-color: #f8f9fa; /* Makes the background white on focus */
+}
+/* Button container */
+.button-group {
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+   display: flex; /* Use flexbox */
+   flex-direction: column; /* Stack buttons vertically */
+   align-items: flex-start; /* Align items to the left */
+}
+
+/* Cancel button */
+.cancel-btn {
+   width: 80px;
+   height: 30px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 16px;
+
+   background-color: rgb(169, 165, 165); /* Green background */
+   color: black; /* White text */
+   padding: 5px 10px; /* Padding around the button */
+   border: none; /* No border */
+   border-radius: 4px; /* Rounded corners */
+   cursor: pointer; /* Pointer cursor on hover */
+
+   margin-bottom: 20px; /* Space between buttons */
+   cursor: pointer;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+/* Save button */
+.save-btn {
+   width: 80px;
+   height: 30px;
+
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 16px;
+
+   background-color: white; /* Green background */
+   color: black; /* White text */
+   padding: 5px 10px; /* Padding around the button */
+   border: none; /* No border */
+   border-radius: 4px; /* Rounded corners */
+   cursor: pointer; /* Pointer cursor on hover */
+
+   margin-bottom: 10px; /* Space between buttons */
+   cursor: pointer;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.cancel-btn:hover, .save-btn:hover {
+   background-color: whitesmoke; /* Darker green on hover */
+   transform: scale(1.05);
+}
+.cancel-btn:active, .save-btn:active{
+   background-color: whitesmoke; /* Even darker blue on click */
+   transform: scale(0.98); /* Slightly shrink on click for a pressed effect */
+}
+
+input[readonly], textarea[readonly] {
+   border: none;
+   pointer-events: none;
+   resize: none;
+}
+
+
+.add-image-btn {
+   margin: 15px 0 15px 20px; /* Adjust the margins */
+   width: 130px; /* Width of the button */
+   height: 190px; /* Height of the button */
+   background-color: #f0f0f0;
+   border: 2px dashed #ccc;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   cursor: pointer;
+   background-size: cover; /* Ensures the background image fits */
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 15px; /* Slightly rounded corners */
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   top: -12px; /* Move it upward by 20px */
+   position: absolute;
+}
+.image-upload-container {
+   display: inline-block;
+   position: relative; /* Set relative positioning */
+}
+
+.add-image-btn:hover {
+   background-color: rgb(197, 193, 193); /* Darker green on hover */
+}
+.image-upload-containr {
+   display: flex;
+   justify-content: center; /* Horizontally centers the button */
+   align-items: center; /* Vertically centers the button */
+   margin-top: 20px; /* Optional: Add some spacing above the container */
+   position: relative; /* Ensures positioning inside the container */
+   height: 200px; /* Set the height of the container to control vertical centering */
+}
+.add-image-bt {
+   margin: 0; /* Move the button upward and center it horizontally */
+   width: 130px; /* Width of the button */
+   height: 190px; /* Height of the button */
+   background-color: #f0f0f0;
+   border: 2px dashed #ccc;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   cursor: pointer;
+   background-size: cover; /* Ensures the background image fits */
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 15px; /* Slightly rounded corners */
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   text-align: center; /* Center text */
+   position: absolute;
+   top: -118px; /* Move the button upward by 20px */
+}
+
+.add-image-bt:hover {
+   background-color: #a4a3a3; /* Darker green on hover */
+}
+
+.add-image-b {
+   margin: 0 20px 15px auto; /* Negative top margin to move the button up */
+   width: 130px; /* Width of the button */
+   height: 190px; /* Height of the button */
+   background-color: #f0f0f0;
+   border: 2px dashed #ccc;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   cursor: pointer;
+   background-size: cover; /* Ensures the background image fits */
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 15px; /* Slightly rounded corners */
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   float: right; /* Move to the right */
+   position: relative;
+   top: -420px;
+}
+
+.add-image-b:hover {
+   background-color: #a4a3a3; /* Darker green on hover */
+}
+
+   
+/* Edit button styles */
+.edit-btn {
+   background-color: black;
+   color: white;
+   width: 40px;
+   height: 40px;
+   position: absolute; /* Change to absolute to position it freely */
+   left: -60px;
+   top: -290px; /* Adjust the top value to move it upward */
+   padding: 0; /* Remove padding to make the icon fit better */
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   border-radius: 10px;
+   transition: background-color 0.3s ease;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.edit-btn i {
+   margin: 0; /* Remove margin to center icon perfectly */
+   font-size: 18px; /* Adjust font-size if needed */
+}
+
+.edit-btn:hover {
+   background-color: #545754; /* Darker green on hover */
+}
+
+/* Delete button styles */
+.delete-btn {
+   background-color: black;
+   color: white;
+   width: 40px;
+   height: 40px;
+   position: absolute; /* Change to absolute to position it freely */
+   left: -60px;
+   top: -230px; /* Adjust the top value to move it upward */
+   padding: 0; /* Remove padding to make the icon fit better */
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   border-radius: 10px;
+   transition: background-color 0.3s ease;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.delete-btn i {
+   margin: 0; /* Remove margin to center icon perfectly */
+   font-size: 18px; /* Adjust font-size if needed */
+}
+
+.delete-btn:hover {
+   background-color: #545754; /* Darker red on hover */
+}
+
+/* Icon styles (Optional) */
+button i {
+   font-size: 20px;
+}
+
+
